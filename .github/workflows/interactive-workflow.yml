@@ -60,4 +60,5 @@ jobs:
       
       - name: Show timestamp
         if: github.event.inputs.include-timestamp == 'true'
-        run: echo "Current time: $(date)"
+        run: |
+          echo "Current time: $(date)"
